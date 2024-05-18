@@ -1,0 +1,29 @@
+•	How do you concatenate two strings in Python?
+    We can concatenate two string using this "+"
+    # programme
+    String1=input("Enter your Sentence")
+    String2=input("Enter your another sentence")l̥
+    print(String1+ String2)
+
+•	What method would you use to convert a string to lowercase in Python?
+    We convert a string in lowercase using lower() method.
+    Str=input("Enter a sentence")
+    print(Str.lower())
+
+•	How can you find the length of a string in Python?
+   in python we find the length of a string using len function.
+   String3=input("Enter a sentence")
+   print(len(String3))
+
+•	Remove the white space from left side of given string ---->  st = “                hello jecrc             “.
+    using rstrip and lstrip.
+    st = "              hello jecrc                "
+    print(st.lstrip())
+    print(st.rstrip())
+
+•	What is the difference between the "insert()" and "append()" methods when adding elements to a list in Python, give an example by coding. 
+    Difference between insert() and append() is that:
+    append() insert at last position.
+        but
+    insert() in insert we give him index position for to insert any input.
+
