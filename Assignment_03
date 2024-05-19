@@ -1,1 +1,61 @@
+def Is_Palindrome(String):
+    char = ""
+    for Char in String:
+        char = Char + char
+    return char == String
+
+
+Input = input("Enter a sentence\\word: ")
+
+if Is_Palindrome(Input):
+    print("Enter sentence\\ word is palindrome.")
+else:
+    print("Enter sentence\\ word is not palindrome.")
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+def Calculator(Number1, Number2, operation):
+    match operation:
+        case "+":
+            return Number1 + Number2
+        case "-":
+            return Number1 - Number2
+        case "*":
+            return Number1 * Number2
+        case "/":
+            return Number1 / Number2
+
+
+num = int(input("Enter your first number:"))
+num2 = int(input("Enter your second number: "))
+Operation = input("Enter operator symbol: ")
+calculator = Calculator(num, num2, Operation)
+print(calculator)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+def count_character(String):
+    for character in String:
+        print(f"{character} => {String.count(character)} times.")
+
+
+Input = input("Enter a string: ")
+count_character(Input)
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+def Table(Input1):
+    if Input1 <= 0:
+        print("Enter valid number.")
+    for j in range(1, Input + 1):
+        for i in range(1, 10 + 1):
+            tabl1 = j * i
+            print(f"{j} X {i} = {tabl1}")
+        print("\n")
+
+
+Input = int(input("Enter number that you wants to print table: "))
+Table(Input)
+
+---------------------------------------------------------------------------------------------------------------------------------------------
 
