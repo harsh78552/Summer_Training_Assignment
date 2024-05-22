@@ -1,0 +1,30 @@
+class Father:
+    def __init__(self, father_name, father_age):
+        self.father_name = father_name
+        self.father_age = father_age
+
+    def father_hii(self):
+        print("my father name is : ", self.father_name)
+        print("and my father age is : ", self.father_age)
+
+
+class Son(Father):
+    son_name = "mohit sharma"
+    son_age = 50
+
+    def __init__(self, Hair_color, eye_color, father_name, father_age):
+        super().__init__(father_name, father_age)
+        self.Hair_color = Hair_color
+        self.eye_color = eye_color
+
+    def son_hii(self):
+        print("my father name is : ", self.son_name)
+        print("and my father age is : ", self.son_age)
+        print(f" and its hair color is :{self.Hair_color}")
+        print(f" and its eye color is: {self.eye_color}")
+
+
+son_obj = Son("Black","White","Pyopsi",50)
+son_obj.father_hii()
+print()
+son_obj.son_hii()
